@@ -1,3 +1,24 @@
+
+$(function() {
+	var text = $('.to-type').html();
+	$('.to-type').html('');
+	
+	$(".typed").typed({
+	  strings: [
+		text
+	  ],
+	  typeSpeed: 0,
+	  showCursor: true,
+	  cursorChar: "|",
+	  loop: false,
+	  contentType: 'html',
+	  callback: function() {
+		$('a.email').removeClass('opa');
+	  }
+	});
+  });
+
+
 Modernizr.addTest('iphone-safari', function () {
    var deviceAgent = navigator.userAgent.toLowerCase(),
    agentID = deviceAgent.match(/(iphone|ipod|ipad)/),
@@ -6,6 +27,7 @@ Modernizr.addTest('iphone-safari', function () {
 		return true;
 	}
 });
+
 
 function debounce(func, wait, immediate) {
 // utility to trigger events after set time (used on scroll principally)
