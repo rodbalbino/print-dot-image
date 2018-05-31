@@ -46,8 +46,8 @@ canvas{
 /* ---- particles.js container ---- */
 
 #particles-js{
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   background-color: #111111;
   background-image: url('');
   background-size: cover;
@@ -59,9 +59,6 @@ canvas{
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -1;
-}
-#text {
   min-height: 100vh;
   width: 100vw;
   z-index: 1;
@@ -73,6 +70,7 @@ canvas{
   justify-content: center;
   text-align: center;
 }
+
 
 * {
   -webkit-user-select: none;
