@@ -1,3 +1,20 @@
+$(function () {
+  $(".typed").typed({
+    strings: ["Connects", "turn on", "associate", "build in", "relate", "cross", "joining", "join"],
+    stringsElement: null,
+    typeSpeed: 50,
+    startDelay: 1000,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|",
+    attr: null,
+    contentType: 'html'
+  });
+});
+
+
 particlesJS("particles-js",
   {
     "particles": {
