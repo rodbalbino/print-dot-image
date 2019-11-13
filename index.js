@@ -21,10 +21,10 @@ const drawScene = () => {
 
       let gray = 0.3 * rgbR + 0.59 * rgbG + 0.11 * rgbB;
 
-      //   if (gray > 40) {
-      var particle = { x, y, color: gray };
-      particles.push(particle);
-      //   }
+      if (gray > 30) {
+        var particle = { x, y, color: gray };
+        particles.push(particle);
+      }
     }
   }
 
@@ -32,7 +32,7 @@ const drawScene = () => {
     var particle = particles[i];
     context.fillStyle = `rgba(${particle.color},${particle.color},${particle.color},1)`;
 
-    let pixelSize = 2;
+    let pixelSize = 1.5;
 
     context.fillRect(
       particle.x * size,
